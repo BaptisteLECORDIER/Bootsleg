@@ -2,13 +2,16 @@
 
 // ---- base : reset du css, balises globales (ex:html/body) ---- //
 
+
+
 // ---- layout : la structure du site ---- //
 
+* {
+    box-sizing: border-box;
+}
+
+
 // ---- modules : partie autonome et reutilisable ---- //
-
-// ---- state : les differents etats d'un module ---- //
-
-// ---- themes : Variantes de présentation (dark mode, @media) ---- //
 
 .b-btn {
     color: $black;
@@ -112,6 +115,45 @@
     }
 }
 
+/* classe relative à la creation d'une grid */
+.row {
+    margin: 0 auto;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    [class^="col-"] {
+        float: left;
+        padding: 1rem;
+    }
+
+    // Mixin qui en fonction de la valeur de début et de fin revoit la largeur de la ligne
+
+    @mixin calcwidht($start, $end) {
+        width: calc($start * 100% / $end);
+    }
+
+    // Boucle permettant de générer toutes les sélécteurs de classes de lignes et en fonction de leurs nom
+    // associe la largeur adéquate 
+
+    @for $x from 1 through 11 {
+        @for $i from $x+1 through 12 {
+            .col-#{$x}-of-#{$i} {
+                @include calcwidht(1,#{$i});
+            }
+        }
+    }
+}
+
+
+// ---- state : les differents etats d'un module ---- //
+
+
+
+// ---- themes : Variantes de présentation (dark mode, @media) ---- //
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -224,39 +266,3 @@
     @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     /* Styles */
     }
-
-* {
-  box-sizing: border-box;
-}
-
-.row {
-    margin: 0 auto;
-
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    [class^="col-"] {
-        float: left;
-        padding: 1rem;
-    }
-
-    // Mixin qui en fonction de la valeur de début et de fin revoit la largeur de la ligne
-
-    @mixin calcwidht($start, $end) {
-        width: calc($start * 100% / $end);
-    }
-
-    // Boucle permettant de générer toutes les sélécteurs de classes de lignes et en fonction de leurs nom
-    // associe la largeur adéquate 
-
-    @for $x from 1 through 11 {
-        @for $i from $x+1 through 12 {
-            .col-#{$x}-of-#{$i} {
-                @include calcwidht(1,#{$i});
-            }
-        }
-    }
-}
