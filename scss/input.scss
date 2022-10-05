@@ -39,10 +39,10 @@
 .card {
     position:relative;
     display:flex;
-    flex-direction:column;
-    width: $cardwidth;
-    min-height: $cardmin-height;
-    border-radius: 0.4rem;
+    flex-direction: $card__display-direction;
+    width: $card__width;
+    min-height: $card__min-height;
+    border-radius: $card__border-radius;
   
     word-wrap:break-word;
     border: $onepx solid $lightgrey;
@@ -51,7 +51,7 @@
   }
   
   /* obtention d'une image de card aux proportions adaptatives */
-  .card-img-top {
+  .card-img {
     max-width: 100%;
     height: auto;
   }
