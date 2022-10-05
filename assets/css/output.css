@@ -65,34 +65,30 @@
   border: 1px solid rgb(203, 203, 203);
   background-color: #fff;
   box-shadow: 1px 1px 10px rgb(203, 203, 203);
+  /* obtention d'une image de card aux proportions adaptatives */
+  /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
+  /* titre plus grand et espacé par rapport au sous-titre */
+  /* sous-titre légerement plus grand et espacé par rapport au texte */
+  /* texte espacé par rapport au bouton */
 }
-
-/* obtention d'une image de card aux proportions adaptatives */
-.card-img {
+.card__img {
   max-width: 100%;
   height: auto;
 }
-
-/* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
-.card-body {
+.card__body {
   padding: 15px;
+  padding-bottom: 7px;
   color: black;
 }
-
-/* titre plus grand et espacé par rapport au sous-titre */
-.card-title {
+.card__title {
   font-size: 1.75rem;
   margin-bottom: 10px;
 }
-
-/* sous-titre légerement plus grand et espacé par rapport au texte */
-.card-subtitle {
+.card__subtitle {
   font-size: 1.25rem;
   margin-bottom: 20px;
 }
-
-/* texte espacé par rapport au bouton */
-.card-text {
+.card__text {
   color: rgb(44, 44, 44);
   margin-bottom: 20px;
 }

@@ -78,37 +78,39 @@
     border: $card__border $lightgrey;
     background-color: $card-bg;
     box-shadow: $card__box-shadow $lightgrey;
-  }
-  
-  /* obtention d'une image de card aux proportions adaptatives */
-  .card-img {
-    max-width: $card-img__max-width;
-    height: auto;
-  }
-  
-  /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
-  .card-body {
-    padding: $card-body__padding;
-    color: $black;
-  }
-  
-  /* titre plus grand et espacé par rapport au sous-titre */
-  .card-title {
-    font-size: $card-title__font-size;
-    margin-bottom: $card__small-margin;
-  }
-  
-  /* sous-titre légerement plus grand et espacé par rapport au texte */
-  .card-subtitle {
-    font-size: $card-subtitle__font-size;
-    margin-bottom: $card__big-margin;
-  }
-  
-  /* texte espacé par rapport au bouton */
-  .card-text {
-    color: $card-text__color;
-    margin-bottom: $card__big-margin;
-  }
+
+    /* obtention d'une image de card aux proportions adaptatives */
+    &__img {
+        max-width: $card__img-max-width;
+        height: auto;
+    }
+
+    /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
+    &__body {
+        padding: $card__body-padding;
+        padding-bottom: $card__body-bottom-padding;
+        color: $black;
+    }
+
+    /* titre plus grand et espacé par rapport au sous-titre */
+    &__title {
+        font-size: $card__title-font-size;
+        margin-bottom: $card__small-margin;
+    }
+
+    /* sous-titre légerement plus grand et espacé par rapport au texte */
+    &__subtitle {
+        font-size: $card__subtitle-font-size;
+        margin-bottom: $card__big-margin;
+    }
+
+    /* texte espacé par rapport au bouton */
+    &__text {
+        color: $card__text-color;
+        margin-bottom: $card__big-margin;
+    }
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
