@@ -1,5 +1,18 @@
-.b-btn {
-  color: black;
-}
+/* Error: Expected newline.
+ *   ,
+ * 9 | .card
+ *   |      ^
+ *   '
+ *   scss\variables.sass 9:6  @import
+ *   scss\input.scss 1:9      root stylesheet */
 
-/*# sourceMappingURL=output.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected newline.\a   \2577 \a 9 \2502  .card\d\a   \2502       ^\a   \2575 \a   scss\\variables.sass 9:6  @import\a   scss\\input.scss 1:9      root stylesheet";
+}
