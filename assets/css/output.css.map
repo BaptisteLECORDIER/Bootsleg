@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 {"version":3,"sourceRoot":"","sources":["../../scss/input.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI","file":"output.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../../scss/input.scss","../../scss/variables.sass"],"names":[],"mappings":"AAYA;EACI,OCVK;;;ADaT;EACI;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;AACA;AACI;;AAGA;AACA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;AACA;;AAEA;AAAA;AAAA;AAGA;AACA;;AAGA;AACA;;AAEA;AACA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;;AAGA;AACA;AACA;;AAGA;AACA;;AAGA;AACA;AACA;;AAGA;AACA","file":"output.css"}
+>>>>>>> Stashed changes
