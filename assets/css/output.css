@@ -6,6 +6,7 @@
  *   scss\variables.sass 9:6  @import
  *   scss\input.scss 1:9      root stylesheet */
 
+<<<<<<< Updated upstream
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
       "Droid Sans Mono", monospace, monospace;
@@ -16,3 +17,32 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Expected newline.\a   \2577 \a 9 \2502  .card\d\a   \2502       ^\a   \2575 \a   scss\\variables.sass 9:6  @import\a   scss\\input.scss 1:9      root stylesheet";
 }
+=======
+/*# sourceMappingURL=output.css.map */
+
+.card-nathan {
+  background-color: #fff;
+  border-radius: 0.375rem;
+  border: 1px solid rgb(203, 203, 203);
+
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  word-wrap:break-word;
+}
+
+.card-img-top-nathan {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body-nathan {
+  flex: 1 1 auto;
+  padding: 15px;
+  color: black;
+}
+
+.card-text-nathan {
+  color: rgb(44, 44, 44);
+}
+>>>>>>> Stashed changes
