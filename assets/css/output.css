@@ -25,31 +25,31 @@
 }
 
 .btn-primary {
-  color: rgb(19, 19, 180);
+  background-color: rgb(19, 19, 180);
 }
 
 .btn-secondary {
-  color: grey;
+  background-color: grey;
 }
 
 .btn-success {
-  color: #5cb85c;
+  background-color: #5cb85c;
 }
 
 .btn-danger {
-  color: #d9534f;
+  background-color: #d9534f;
 }
 
 .btn-warning {
-  color: #f0ad4e;
+  background-color: #f0ad4e;
 }
 
 .btn-info {
-  color: #5bc0de;
+  background-color: #5bc0de;
 }
 
 .btn-light {
-  color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 /* classe relative à l'ensemble d'une card */
