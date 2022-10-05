@@ -11,7 +11,7 @@
 // ---- themes : Variantes de présentation (dark mode, @media) ---- //
 
 .b-btn {
-    color: $black
+    color: $black;
 }
 
 .btn {
@@ -34,6 +34,35 @@
 .btn-sm {
     font-size: xx-small;
 }
+
+.btn-primary {
+    color: $primary;
+} 
+
+.btn-secondary {
+    color: $secondary;
+} 
+
+.btn-success  {
+    color: $success;
+} 
+
+.btn-danger  {
+    color: $danger;
+} 
+
+.btn-warning  {
+    color: $warning;
+} 
+
+.btn-info  {
+    color: $info;
+} 
+
+.btn-light {
+    color: $light;
+} 
+
 
 /* classe relative à l'ensemble d'une card */
 .card {
