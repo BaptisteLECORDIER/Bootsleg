@@ -24,6 +24,34 @@
   font-size: xx-small;
 }
 
+.btn-primary {
+  color: rgb(19, 19, 180);
+}
+
+.btn-secondary {
+  color: grey;
+}
+
+.btn-success {
+  color: #5cb85c;
+}
+
+.btn-danger {
+  color: #d9534f;
+}
+
+.btn-warning {
+  color: #f0ad4e;
+}
+
+.btn-info {
+  color: #5bc0de;
+}
+
+.btn-light {
+  color: #f7f7f7;
+}
+
 /* classe relative à l'ensemble d'une card */
 .card {
   position: relative;
