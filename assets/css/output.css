@@ -15,12 +15,14 @@
   position:relative;
   display:flex;
   flex-direction:column;
+  width: 18rem;
+  min-height: 24rem;
   border-radius: 0.4rem;
 
   word-wrap:break-word;
   border: 1px solid rgb(203, 203, 203);
   background-color: #fff;
-  box-shadow: 1px 1px 10px rgb(110, 110, 110);
+  box-shadow: 1px 1px 10px rgb(203, 203, 203);
 }
 
 /* obtention d'une image de card aux proportions adaptatives */
@@ -37,18 +39,20 @@
 
 /* titre plus grand et espacé par rapport au sous-titre */
 .card-title {
-  font-size: 1rem;
+  font-size: 1.75rem;
   margin-bottom: 10px;
 }
 
 /* sous-titre légerement plus grand et espacé par rapport au texte */
 .card-subtitle {
-  font-size: 0.75rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
 }
 
+/* texte espacé par rapport au bouton */
 .card-text {
   color: rgb(44, 44, 44);
+  margin-bottom: 20px;
 }
 
 
