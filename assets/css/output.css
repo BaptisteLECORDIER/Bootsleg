@@ -2,6 +2,15 @@
   color: black;
 }
 
+.btn-lg {
+  font-size: xx-large;
+}
+
+.btn-sm {
+  font-size: xx-small;
+}
+
+
 .card-nathan {
   position:relative;
   display:flex;
@@ -13,12 +22,14 @@
   background-color: #fff;
 }
 
-.btn-lg {
-  font-size: xx-large;
+.card-img-top-nathan {
+  max-width: 100%;
+  height: auto;
 }
 
-.btn-sm {
-  font-size: xx-small;
+.card-body-nathan {
+  padding: 15px;
+  color: black;
 }
 
 .card-title-nathan {
@@ -29,6 +40,8 @@
 .card-text-nathan {
   color: rgb(44, 44, 44);
 }
+
+
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
