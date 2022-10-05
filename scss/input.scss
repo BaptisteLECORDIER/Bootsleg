@@ -16,8 +16,8 @@
 
 .btn {
     cursor: pointer;
-    padding: 15px 10px;
-    margin: 10px 4px;
+    padding: 15px $tenpx;
+    margin: $tenpx 4px;
     text-transform: uppercase;
     text-align: center;
     position: relative;
@@ -34,6 +34,51 @@
 .btn-sm {
     font-size: xx-small;
 }
+
+/* classe relative à l'ensemble d'une card */
+.card {
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    width: 18rem;
+    min-height: 24rem;
+    border-radius: 0.4rem;
+  
+    word-wrap:break-word;
+    border: $onepx solid $lightgrey;
+    background-color: $card-bg;
+    box-shadow: $onepx $onepx $tenpx $lightgrey;
+  }
+  
+  /* obtention d'une image de card aux proportions adaptatives */
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
+  .card-body {
+    padding: 15px;
+    color: black;
+  }
+  
+  /* titre plus grand et espacé par rapport au sous-titre */
+  .card-title {
+    font-size: 1.75rem;
+    margin-bottom: $tenpx;
+  }
+  
+  /* sous-titre légerement plus grand et espacé par rapport au texte */
+  .card-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  /* texte espacé par rapport au bouton */
+  .card-text {
+    color: rgb(44, 44, 44);
+    margin-bottom: 20px;
+  }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
