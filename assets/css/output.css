@@ -1,5 +1,21 @@
-.b-btn {
-  color: black;
+.grid-system {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+}
+
+.col {
+  width: 1fr;
+}
+
+.col-2 {
+  width: 2fr;
 }
 
 /*# sourceMappingURL=output.css.map */
