@@ -39,19 +39,19 @@
 .card {
     position:relative;
     display:flex;
-    flex-direction:column;
-    width: 18rem;
-    min-height: 24rem;
-    border-radius: 0.4rem;
+    flex-direction: $card__display-direction;
+    width: $card__width;
+    min-height: $card__min-height;
+    border-radius: $card__border-radius;
   
-    word-wrap:break-word;
+    word-wrap: break-word;
     border: $onepx solid $lightgrey;
     background-color: $card-bg;
     box-shadow: $onepx $onepx $tenpx $lightgrey;
   }
   
   /* obtention d'une image de card aux proportions adaptatives */
-  .card-img-top {
+  .card-img {
     max-width: 100%;
     height: auto;
   }

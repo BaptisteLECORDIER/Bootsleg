@@ -39,7 +39,7 @@
 }
 
 /* obtention d'une image de card aux proportions adaptatives */
-.card-img-top {
+.card-img {
   max-width: 100%;
   height: auto;
 }
