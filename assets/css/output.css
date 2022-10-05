@@ -10,8 +10,8 @@
   font-size: xx-small;
 }
 
-
-.card-nathan {
+/* classe relative à l'ensemble d'une card */
+.card {
   position:relative;
   display:flex;
   flex-direction:column;
@@ -20,24 +20,34 @@
   word-wrap:break-word;
   border: 1px solid rgb(203, 203, 203);
   background-color: #fff;
+  box-shadow: 1px 1px 10px rgb(110, 110, 110);
 }
 
-.card-img-top-nathan {
+/* obtention d'une image de card aux proportions adaptatives */
+.card-img-top {
   max-width: 100%;
   height: auto;
 }
 
-.card-body-nathan {
+/* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
+.card-body {
   padding: 15px;
   color: black;
 }
 
-.card-title-nathan {
+/* titre plus grand et espacé par rapport au sous-titre */
+.card-title {
   font-size: 1rem;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-.card-text-nathan {
+/* sous-titre légerement plus grand et espacé par rapport au texte */
+.card-subtitle {
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
   color: rgb(44, 44, 44);
 }
 
