@@ -3,3 +3,16 @@
 .b-btn {
     color: $black
 }
+
+.btn {
+    padding: 15px 10px;
+    margin: 10px 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+  
+.btn:hover {
+    opacity: 0.5;
+}
