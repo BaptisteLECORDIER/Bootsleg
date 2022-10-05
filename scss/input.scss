@@ -39,19 +39,19 @@
 .card {
     position:relative;
     display:flex;
-    flex-direction: $card__display-direction;
-    width: $card__width;
-    min-height: $card__min-height;
-    border-radius: $card__border-radius;
+    flex-direction:column;
+    width: $cardwidth;
+    min-height: $cardmin-height;
+    border-radius: 0.4rem;
   
-    word-wrap: break-word;
+    word-wrap:break-word;
     border: $onepx solid $lightgrey;
     background-color: $card-bg;
     box-shadow: $onepx $onepx $tenpx $lightgrey;
   }
   
   /* obtention d'une image de card aux proportions adaptatives */
-  .card-img {
+  .card-img-top {
     max-width: 100%;
     height: auto;
   }
@@ -191,3 +191,39 @@
     @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     /* Styles */
     }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+    margin: 0 auto;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    [class^="col-"] {
+        float: left;
+        padding: 1rem;
+    }
+
+    // Mixin qui en fonction de la valeur de début et de fin revoit la largeur de la ligne
+
+    @mixin calcwidht($start, $end) {
+        width: calc($start * 100% / $end);
+    }
+
+    // Boucle permettant de générer toutes les sélécteurs de classes de lignes et en fonction de leurs nom
+    // associe la largeur adéquate 
+
+    @for $x from 1 through 11 {
+        @for $i from $x+1 through 12 {
+            .col-#{$x}-of-#{$i} {
+                @include calcwidht(1,#{$i});
+            }
+        }
+    }
+}
