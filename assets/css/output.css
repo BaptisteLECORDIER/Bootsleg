@@ -66,7 +66,7 @@
   border-radius: 0.4rem;
   word-wrap: break-word;
   border: 1px solid rgb(203, 203, 203);
-  background-color: #fff;
+  background-color: white;
   box-shadow: 1px 1px 10px rgb(203, 203, 203);
   /* obtention d'une image de card aux proportions adaptatives */
   /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
