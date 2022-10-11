@@ -104,19 +104,18 @@ body {
     /* titre plus grand et espacé par rapport au sous-titre */
     &__title {
         font-size: $card__title-font-size;
-        margin-bottom: $card__small-margin;
+        margin-bottom: $card__margin;
     }
 
     /* sous-titre légerement plus grand et espacé par rapport au texte */
     &__subtitle {
         font-size: $card__subtitle-font-size;
-        margin-bottom: $card__big-margin;
+        margin-bottom: $card__margin;
     }
 
     /* texte espacé par rapport au bouton */
     &__text {
         color: $card__text-color;
-        margin-bottom: $card__big-margin;
     }
 }
 
