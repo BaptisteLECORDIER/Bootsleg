@@ -12,6 +12,7 @@
   position: relative;
   border-radius: 0.4rem;
   border: 0;
+  color: white;
 }
 
 .btn:hover {
@@ -52,6 +53,7 @@
 
 .btn-light {
   background-color: #f7f7f7;
+  color: black;
 }
 
 /* classe relative à l'ensemble d'une card */
@@ -75,6 +77,7 @@
 .card__img {
   max-width: 100%;
   height: auto;
+  border-radius: 0.4rem;
 }
 .card__body {
   padding: 15px;

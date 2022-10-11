@@ -23,6 +23,7 @@
     position: $position_element;
     border-radius: $border_radius_size;
     border : $border_size;
+    color: $white;
 }
   
 .btn:hover {
@@ -63,6 +64,7 @@
 
 .btn-light {
     background-color: $light;
+    color: $black;
 } 
 
 
@@ -84,6 +86,7 @@
     &__img {
         max-width: $card__img-max-width;
         height: auto;
+        border-radius: $card__border-radius;
     }
 
     /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
