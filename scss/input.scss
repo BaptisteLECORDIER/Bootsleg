@@ -2,13 +2,14 @@
 
 // ---- base : reset du css, balises globales (ex:html/body) ---- //
 
+* {
+    box-sizing: border-box;
+}
 
 
 // ---- layout : la structure du site ---- //
 
-* {
-    box-sizing: border-box;
-}
+
 
 
 // ---- modules : partie autonome et reutilisable ---- //
@@ -151,10 +152,6 @@
 
 // ---- state : les differents etats d'un module ---- //
 
-
-
-// ---- themes : Variantes de présentation (dark mode, @media) ---- //
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
@@ -266,3 +263,7 @@
     @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     /* Styles */
     }
+
+
+// ---- themes : Variantes de présentation (dark mode, @media) ---- //
+
