@@ -10,8 +10,8 @@ body {
 
 .btn {
   cursor: pointer;
-  padding: 15px 10px;
-  margin: 10px 4px;
+  padding: 12px 10px;
+  margin: 4px;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -61,6 +61,16 @@ body {
   color: black;
 }
 
+/* Donne une ombre grise à l'élément associé */
+.glow {
+  box-shadow: 1px 1px 10px rgb(203, 203, 203);
+}
+
+/* Centre l'élément associé */
+.center {
+  text-align: center;
+}
+
 /* classe relative à l'ensemble d'une card */
 .card {
   position: relative;
@@ -72,7 +82,6 @@ body {
   word-wrap: break-word;
   border: 1px solid rgb(203, 203, 203);
   background-color: white;
-  box-shadow: 1px 1px 10px rgb(203, 203, 203);
   /* obtention d'une image de card aux proportions adaptatives */
   /* contenu textuel sobre et éloigner des bords de la card pour plus de lisibilité */
   /* titre plus grand et espacé par rapport au sous-titre */
@@ -99,6 +108,7 @@ body {
 }
 .card__text {
   color: rgb(44, 44, 44);
+  margin-bottom: 10px;
 }
 
 /* classe relative à la creation d'une grid */
@@ -315,7 +325,217 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
+  /* classe relative à la creation d'une grid */
+  .row {
+    margin: 0 auto;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row [class^=col-] {
+    float: left;
+    padding: 1rem;
+  }
+  .row .col-1-of-2 {
+    width: calc(100% / 2);
+  }
+  .row .col-1-of-3 {
+    width: calc(100% / 3);
+  }
+  .row .col-1-of-4 {
+    width: calc(100% / 4);
+  }
+  .row .col-1-of-5 {
+    width: calc(100% / 5);
+  }
+  .row .col-1-of-6 {
+    width: calc(100% / 6);
+  }
+  .row .col-1-of-7 {
+    width: calc(100% / 7);
+  }
+  .row .col-1-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-1-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-1-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-1-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-1-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-2-of-3 {
+    width: calc(100% / 3);
+  }
+  .row .col-2-of-4 {
+    width: calc(100% / 4);
+  }
+  .row .col-2-of-5 {
+    width: calc(100% / 5);
+  }
+  .row .col-2-of-6 {
+    width: calc(100% / 6);
+  }
+  .row .col-2-of-7 {
+    width: calc(100% / 7);
+  }
+  .row .col-2-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-2-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-2-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-2-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-2-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-3-of-4 {
+    width: calc(100% / 4);
+  }
+  .row .col-3-of-5 {
+    width: calc(100% / 5);
+  }
+  .row .col-3-of-6 {
+    width: calc(100% / 6);
+  }
+  .row .col-3-of-7 {
+    width: calc(100% / 7);
+  }
+  .row .col-3-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-3-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-3-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-3-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-3-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-4-of-5 {
+    width: calc(100% / 5);
+  }
+  .row .col-4-of-6 {
+    width: calc(100% / 6);
+  }
+  .row .col-4-of-7 {
+    width: calc(100% / 7);
+  }
+  .row .col-4-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-4-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-4-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-4-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-4-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-5-of-6 {
+    width: calc(100% / 6);
+  }
+  .row .col-5-of-7 {
+    width: calc(100% / 7);
+  }
+  .row .col-5-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-5-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-5-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-5-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-5-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-6-of-7 {
+    width: calc(100% / 7);
+  }
+  .row .col-6-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-6-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-6-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-6-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-6-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-7-of-8 {
+    width: calc(100% / 8);
+  }
+  .row .col-7-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-7-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-7-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-7-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-8-of-9 {
+    width: calc(100% / 9);
+  }
+  .row .col-8-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-8-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-8-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-9-of-10 {
+    width: calc(100% / 10);
+  }
+  .row .col-9-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-9-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-10-of-11 {
+    width: calc(100% / 11);
+  }
+  .row .col-10-of-12 {
+    width: calc(100% / 12);
+  }
+  .row .col-11-of-12 {
+    width: calc(100% / 12);
+  }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {

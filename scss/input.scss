@@ -72,6 +72,15 @@ body {
     color: $black;
 } 
 
+/* Donne une ombre grise à l'élément associé */
+.glow {
+    box-shadow: $element-shadow $lightgrey;
+}
+
+/* Centre l'élément associé */
+.center {
+    text-align: center;
+}
 
 /* classe relative à l'ensemble d'une card */
 .card {
@@ -85,7 +94,6 @@ body {
     word-wrap: break-word;
     border: $card__border $lightgrey;
     background-color: $white;
-    box-shadow: $card__box-shadow $lightgrey;
 
     /* obtention d'une image de card aux proportions adaptatives */
     &__img {
@@ -116,6 +124,7 @@ body {
     /* texte espacé par rapport au bouton */
     &__text {
         color: $card__text-color;
+        margin-bottom: $card__margin;
     }
 }
 
@@ -157,7 +166,38 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles */
+        /* classe relative à la creation d'une grid */
+        .row {
+            margin: 0 auto;
+
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            [class^="col-"] {
+                float: left;
+                padding: 1rem;
+            }
+
+            // Mixin qui en fonction de la valeur de début et de fin revoit la largeur de la ligne
+
+            @mixin calcwidth($start, $end) {
+                width: calc($start * 100% / $end);
+            }
+
+            // Boucle permettant de générer toutes les sélécteurs de classes de lignes et en fonction de leurs nom
+            // associe la largeur adéquate 
+
+            @for $x from 1 through 11 {
+                @for $i from $x+1 through 12 {
+                    .col-#{$x}-of-#{$i} {
+                        @include calcwidth(1,#{$i});
+                    }
+                }
+            }
+        }
     }
     
     /* Smartphones (landscape) ----------- */
