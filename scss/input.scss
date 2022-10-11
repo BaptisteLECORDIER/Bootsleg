@@ -14,10 +14,6 @@
 
 // ---- modules : partie autonome et reutilisable ---- //
 
-.b-btn {
-    color: $black;
-}
-
 .btn {
     cursor: $cursor_position;
     padding: $padding_form;
@@ -133,7 +129,7 @@
 
     // Mixin qui en fonction de la valeur de début et de fin revoit la largeur de la ligne
 
-    @mixin calcwidht($start, $end) {
+    @mixin calcwidth($start, $end) {
         width: calc($start * 100% / $end);
     }
 
@@ -143,7 +139,7 @@
     @for $x from 1 through 11 {
         @for $i from $x+1 through 12 {
             .col-#{$x}-of-#{$i} {
-                @include calcwidht(1,#{$i});
+                @include calcwidth(1,#{$i});
             }
         }
     }
